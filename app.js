@@ -1,5 +1,6 @@
 const express = require('express')
 const mongoose = require('mongoos')
+const user = require('./routes/user')
 
 const app = express()
 const port = 4000
@@ -18,7 +19,4 @@ app.listen(port, () => {
     console.log(`app starting => ${port}`);
 })
 
-app.get('/', (req,res) => {
-    console.log('get request');
-    res.send("Hello")
-})
+app.use('/user', user)
