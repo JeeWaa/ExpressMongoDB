@@ -1,0 +1,16 @@
+{
+  "name": "myapp",
+  "version": "1.0.0",
+  "description": "this is express project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "nodemon": "nodemon app.js"
+  },
+  "author": "jeewa",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19"
+  }
+}
